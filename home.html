@@ -1,0 +1,35 @@
+cat > pages/home.html << 'EOF'
+<div class="header">New one receiver</div>
+
+<div class="menu-item" onclick="loadPage('pages/profile.html')">
+    <img src="../assets/user.png">
+    <div>
+        <div class="menu-title">Profile</div>
+        <div id="phoneNumber" class="menu-sub"></div>
+    </div>
+</div>
+
+<div class="menu-item" onclick="loadPage('pages/withdraw.html')">
+    <img src="../assets/money.png">
+    <div>
+        <div class="menu-title">Withdraw Money</div>
+        <div id="balance" class="menu-sub">0.00 USDT</div>
+    </div>
+</div>
+
+<div class="menu-item" onclick="loadPage('pages/send_accounts.html')">
+    <img src="../assets/folder.png">
+    <div>
+        <div class="menu-title">Send Accounts</div>
+        <div id="availableCount" class="menu-sub">AVAILABLE</div>
+    </div>
+</div>
+
+<div class="menu-item" onclick="loadPage('pages/channel.html')">
+    <img src="../assets/channel.png">
+    <div>
+        <div class="menu-title">Channel</div>
+        <div class="menu-sub">Check our channel for updates</div>
+    </div>
+</div>
+EOF
