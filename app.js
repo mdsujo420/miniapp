@@ -1,4 +1,3 @@
-cat > app.js << 'EOF'
 function loadPage(page) {
     fetch(page)
         .then(res => res.text())
@@ -6,4 +5,3 @@ function loadPage(page) {
             document.getElementById("app").innerHTML = html;
         });
 }
-EOF
